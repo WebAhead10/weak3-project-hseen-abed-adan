@@ -1,43 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
-    <title> What's The Weather </title>
-    <script src="/script.js" defer></script>
-    <style>
-        body {
-            font-family: 'Alegreya Sans SC';
-            font-size: 22px;
-          background: linear-gradient(top, #222, #333);
-        }
-        label,
-        input,
-        output {
-          display: block;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-          font-weight: bold;
-          font-size: medium;
-        }
-    </style>
-  </head>
-  <body>
-    <h1>What's The Weather !!</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+  <title> What's The Weather </title>
+  <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>what's the weather?</h1>
+  <div class="container">
     <form>
-      <h2>Enter a country name : </h2>
-      <label for="name">Country name</label>
+      <h2>enter a country name:</h2>
       <input id="countryName" name="countryName" type="search" required />
       <button type="submit">Search</button>
-      <output></output>
     </form>
-    <br>
-    <br>
-    <div>
-        <!-- for the GIPH and the IMG. -->
-        <p> << here is the GIPH >> </p>
-        <p> << here is the img >> </p>
+  </div>
+  <div class="tempAndGiph">
+    <output></output>
+    <div id="giph">
     </div>
-   
-  </body>
+  </div>
+
+</body>
+
 </html>
